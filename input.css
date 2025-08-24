@@ -1,0 +1,16 @@
+@import "tailwindcss";
+/* New gemini code */
+:root {
+    --safe-top-padding: calc(6rem + env(safe-area-inset-top));
+}
+
+@theme {
+    /* Custom colors */
+    --color-navy-blue-custom: #7faeff;
+    --color-sandy-beige: #2d2d0d;
+    --color-charcoal-custom: #36454F;
+
+    /* Custom breakpoints (renamed from 'screens' in v3) */
+    --breakpoint-sm: 40rem;
+    --breakpoint-md: 48rem;
+}

@@ -1,0 +1,6 @@
+# In your project-root/.cargo/config.toml
+
+[target.wasm32-unknown-unknown]
+rustflags = [
+  "--cfg", "getrandom_backend=\"wasm_js\""
+]
