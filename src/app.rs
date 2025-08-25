@@ -119,7 +119,7 @@ pub async fn get_blogs() -> Result<Vec<BlogRecord>, ServerFnError> {
 
     Ok(blogs)
 }
-#[leptos::server(DeleteProject, "/api")]
+#[leptos::server(DeleteProject, "/api/admin")]
 pub async fn delete_project(id: String) -> Result<(), ServerFnError> {
     use surrealdb::engine::local::Db;
     use surrealdb::Surreal;
@@ -133,7 +133,7 @@ pub async fn delete_project(id: String) -> Result<(), ServerFnError> {
     Ok(())
 }
 
-#[leptos::server(DeleteBlog, "/api")]
+#[leptos::server(DeleteBlog, "/api/admin")]
 pub async fn delete_blog(id: String) -> Result<(), ServerFnError> {
     use surrealdb::engine::local::Db;
     use surrealdb::Surreal;

@@ -214,6 +214,7 @@ async fn main() {
     let protected_routes = Router::new()
         .route("/api/publish-blog", post(publish_blog_post))
         .route("/api/publish-project", post(publish_project))
+        .route("/api/admin/{*fn_name}", post(server_fn_handler))
         .route(
             "/adminpanel",
             get(render_app_to_stream_with_context(
