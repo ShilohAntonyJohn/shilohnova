@@ -31,4 +31,6 @@ Finally to compile app
 
 Navigate to folder and run ./build_script.sh
 
-run npm run dev for css styling
+For styling:
+
+run $npm run dev
