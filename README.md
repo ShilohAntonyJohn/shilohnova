@@ -23,6 +23,12 @@ For other distributions:
 
 Ask Gemini or ChatGPT or any generative AI of your choice
 
+Install tailwind:
+
+npm install tailwindcss @tailwindcss/cli
+
 Finally to compile app
 
 Navigate to folder and run ./build_script.sh
+
+run npm run dev for css styling
