@@ -34,3 +34,15 @@ Navigate to folder and run ./build_script.sh
 For styling:
 
 run $npm run dev
+
+#To run it in production
+
+Install docker and enable your user to be able to use docker without sudo(or root privilages)
+
+Navigate to directory containing this repository
+
+$docker build -t shilohnova .
+
+$docker run -d --name shilohnova   -p 127.0.0.1:8080:3000   -v $(pwd)/db_data:/app/data   -e LEPTOS_SITE_ADDR="0.0.0.0:3000"  -e LEPTOS_SITE_ROOT="site" -e LEPTOS_SITE_PKG_DIR="pkg" shilohnova
+
+Now configure a web server of your choice
