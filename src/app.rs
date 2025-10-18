@@ -217,7 +217,7 @@ fn HomePage() -> impl IntoView {
         ContentSection {
             id: 1,
             paragraphs: vec![
-                "Hi, I am Shiloh Antony John, a stoic programmer who aspires to be an entrepreneur to do good to humanity. I am obsessed with gaining knowledge and solving problems with true innovation! Continue scrolling!!!".to_string(),
+                "Hi, I am Shiloh Antony John, a Stoic programmer who aspires to be an entrepreneur to do good to humanity. I am obsessed with gaining knowledge and solving problems with true innovation! Continue scrolling!!!".to_string(),
 
             ],
             base_transform_style: "transform: translateY(0vh) rotate(0deg);".to_string(),
@@ -420,7 +420,7 @@ fn Views() -> impl IntoView {
 
     view! {
     <div class="container mx-auto p-4 md:p-8 min-h-screen pt-20">
-        <Suspense fallback=|| view! { <p>"Loading projects..."</p> }>
+        <Suspense fallback=|| view! { <p>"Loading views..."</p> }>
             {move || {
                 blogs.read().clone().map(|res:Result<Vec<BlogRecord>, ServerFnError>| match res {
                     Ok(vec) if !vec.is_empty() => view! {
