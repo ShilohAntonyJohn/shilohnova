@@ -6,9 +6,9 @@
 
 @theme {
     /* Custom colors */
-    --color-navy-blue-custom: #7faeff;
-    --color-sandy-beige: #2d2d0d;
-    --color-charcoal-custom: #36454F;
+    --color-navy-blue-custom: #F8FAFC;
+    --color-sandy-beige: #1A0F0A;
+    --color-charcoal-custom: #0A1128;
 
     /* Custom breakpoints (renamed from 'screens' in v3) */
     --breakpoint-sm: 40rem;
