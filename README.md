@@ -13,6 +13,10 @@ $rustup target add wasm32-unknown-unknown
 
 $cargo install wasm-pack
 
+For Fedora:
+
+$sudo dnf install perl
+
 $cargo install cargo-leptos
 
 Install clang:
