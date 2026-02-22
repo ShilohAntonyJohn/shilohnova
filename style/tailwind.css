@@ -32,9 +32,9 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-navy-blue-custom: #7faeff;
-    --color-sandy-beige: #2d2d0d;
-    --color-charcoal-custom: #36454F;
+    --color-navy-blue-custom: #F8FAFC;
+    --color-sandy-beige: #1A0F0A;
+    --color-charcoal-custom: #0A1128;
   }
 }
 @layer base {
@@ -251,9 +251,6 @@
   }
   .block {
     display: block;
-  }
-  .contents {
-    display: contents;
   }
   .flex {
     display: flex;
